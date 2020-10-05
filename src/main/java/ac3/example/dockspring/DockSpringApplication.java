@@ -1,0 +1,13 @@
+package ac3.example.dockspring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DockSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DockSpringApplication.class, args);
+	}
+
+}
