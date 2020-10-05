@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - openjdk11
+services:
+  - docker
+install:
+  - docker-compose build
+script:
+  - ./mvnw clean install
+  - ./mvnw clean test
