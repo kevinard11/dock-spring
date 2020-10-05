@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloController {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/", produces = {"application/JSON"})
+    @RequestMapping(method = RequestMethod.GET, produces = {"application/JSON"})
     public ResponseEntity<?> welcome(){
         return new ResponseEntity<>("hi", HttpStatus.OK);
     }
