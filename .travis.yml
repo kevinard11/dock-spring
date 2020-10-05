@@ -3,8 +3,6 @@ jdk:
   - openjdk11
 services:
   - docker
-before_script:
-  - pip install docker-compose
 script:
   - ./mvnw clean install
   - ./mvnw clean test
