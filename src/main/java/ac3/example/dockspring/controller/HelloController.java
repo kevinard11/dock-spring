@@ -14,4 +14,9 @@ public class HelloController {
     public ResponseEntity<?> welcome(){
         return new ResponseEntity<>("hi", HttpStatus.OK);
     }
+
+    @RequestMapping(method = RequestMethod.GET, produces = {"application/JSON"})
+    public ResponseEntity<?> helloWorld(){
+        return new ResponseEntity<>("Hello World", HttpStatus.OK);
+    }
 }
